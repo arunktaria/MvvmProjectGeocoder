@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MvvmProject</string>
+    <string name="maplable">LocationMaps</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+
+
+</resources>

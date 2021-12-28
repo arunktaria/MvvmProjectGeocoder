@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:elevation="10sp">
+
+    <EditText
+        android:id="@+id/searchplaceeditext"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/editextwhitebackground"
+        android:drawableStart="@drawable/quantum_ic_search_grey600_24"
+        android:hint="search place's"
+        android:imeOptions="actionSearch"
+        android:elevation="10sp"
+        android:layout_margin="8sp"
+        android:singleLine="true"
+        android:padding="8sp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            android:id="@+id/recyclerview"
+            android:layout_marginTop="10sp"
+            android:elevation="15sp"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".GoogleMapsLocations.FindLocations">
+
+
+    </fragment>
+
+
+</RelativeLayout>
