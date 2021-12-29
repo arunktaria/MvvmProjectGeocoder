@@ -11,7 +11,7 @@ import com.example.mvvmproject.R
 import com.example.mvvmproject.databinding.BottomsheetlayoutBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
-class ChoosePhotoBottomSheet(context: Context,val activity: Activity) : BottomSheetDialog(context) {
+class ChoosePhotoBottomSheet(context: Context,val activity: Activity) : BottomSheetDialog(context,R.style.tranparentBottomsheet) {
 lateinit var binding : BottomsheetlayoutBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
