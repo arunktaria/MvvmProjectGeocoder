@@ -98,6 +98,7 @@ class UserProfile : AppCompatActivity() {
         binding.getimagefloatingbtn.setOnClickListener {
             bottomSheet = ChoosePhotoBottomSheet(UserProfile@ this, this)
             //bottomSheet.window?.setBackgroundDrawable()
+             bottomsheet.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             bottomSheet.show()
         }
 
